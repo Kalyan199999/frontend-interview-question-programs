@@ -1,0 +1,22 @@
+[
+        {
+        "id": 1,
+        "title": "What is React?",
+        "content": "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies."
+    },
+    {
+        "id": 2,
+        "title": "Why use React?",
+        "content": "React is a popular choice for building user interfaces because it allows developers to build reusable UI components. It also provides a virtual DOM, which makes it efficient to update the UI."
+    },
+    {
+        "id": 3,
+        "title": "How do I get started with React?",
+        "content": "To get started with React, you can install it using npm or yarn. You can also use a tool like Create React App to set up a new React project."
+    },
+    {
+        "id": 4,
+        "title": "What are the key features of React?",
+        "content": "React has several key features, including a virtual DOM, JSX, and component-based architecture. It also provides a rich ecosystem of libraries and tools for building complex applications."
+    }
+]
