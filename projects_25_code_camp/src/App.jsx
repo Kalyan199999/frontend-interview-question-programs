@@ -14,8 +14,9 @@ import ScrollIndicator from './components/scroll-indicator/scroll.jsx'
 import TestingTabs from './components/custom-tabs/test-tabs.jsx'
 import GitHubLoad from './components/git-hub-profile-finder/git-hub-load.jsx'
 import SearchAutoComplete from './components/search-auto-complete/search-users.jsx'
-
 import TicTacToe from './components/tic-tac-toe/game.jsx'
+
+import UseFetchHook from './components/custom-hooks/test.jsx'
 
 function App() 
 {
@@ -54,6 +55,8 @@ function App()
       <SearchAutoComplete />
 
       <TicTacToe />
+
+      <UseFetchHook />
 
     </div>
   )
