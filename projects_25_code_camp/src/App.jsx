@@ -24,11 +24,17 @@ function App()
   
   return (
     <div className="flex flex-col gap-1 p-2">
-      {/* <Accordion />
+      
+      <Accordion />
+
       <RandomColor />
+
       <Rating  numStars='6' />
+
       <Sliding num='5' />
+
       <ImageSlider />
+
       <LoadMoreProducts />
       
       <TreeView menu = {data} />
@@ -36,14 +42,16 @@ function App()
       <QrCodeGeneration />
 
       <LightDarkMode />
+
       <Themes />
+
       <ScrollIndicator />
 
       <TestingTabs  />
 
       <GitHubLoad />
 
-      <SearchAutoComplete /> */}
+      <SearchAutoComplete />
 
       <TicTacToe />
 

@@ -44,7 +44,6 @@
             const target = isXTurn ? 'X' : 'O'
             copy[idx] = target;
 
-            console.log(copy , target);
             setSquares(()=>copy)
 
             if( checkWinner(copy ,target) )
@@ -72,7 +71,7 @@
 
 
         return(
-            <div className="border-2 border-gray-500 w-full h-screen flex flex-col gap-2 justify-center items-center ">
+            <div className="border-2 border-gray-500 w-full flex flex-col gap-2 justify-center items-center ">
 
                 <h1 className="text-purple-400 font-bold">Tic Tac Toe</h1>
                 <div className="flex flex-col gap-1">
