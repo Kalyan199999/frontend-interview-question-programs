@@ -15,8 +15,9 @@ import TestingTabs from './components/custom-tabs/test-tabs.jsx'
 import GitHubLoad from './components/git-hub-profile-finder/git-hub-load.jsx'
 import SearchAutoComplete from './components/search-auto-complete/search-users.jsx'
 import TicTacToe from './components/tic-tac-toe/game.jsx'
+import UseFetchHook from './components/custom-hooks/testFetch.jsx'
 
-import UseFetchHook from './components/custom-hooks/test.jsx'
+import ShowHideData from './components/custom-hooks/test-outside-click.jsx'
 
 function App() 
 {
@@ -26,7 +27,7 @@ function App()
   return (
     <div className="flex flex-col gap-1 p-2">
       
-      <Accordion />
+      {/* <Accordion />
 
       <RandomColor />
 
@@ -56,7 +57,9 @@ function App()
 
       <TicTacToe />
 
-      <UseFetchHook />
+      <UseFetchHook /> */}
+
+      <ShowHideData />
 
     </div>
   )

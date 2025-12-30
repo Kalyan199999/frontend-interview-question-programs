@@ -1,25 +1,23 @@
 import { useState } from 'react'
 
+const generateHexColor = (setColor) => 
+{
+    const hexa = [1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F']
+    const len = hexa.length;
+
+    let colorGenerated = "#"
+    for(let i=0;i<6;i++)
+    {
+        const idx = Math.floor( Math.random()*len ) 
+        colorGenerated += hexa[ idx ]
+    }
+
+    setColor(colorGenerated)
+}
+
 function RandomColor() 
 {
     const [color, setColor] = useState('#daffaae8')
-
-    const generateHexColor = () => 
-    {
-
-        const hexa = [1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F']
-        const len = hexa.length;
-
-        let colorGenerated = "#"
-
-        for(let i=0;i<6;i++)
-        {
-            const idx = Math.floor( Math.random()*len ) 
-            colorGenerated += hexa[ idx ]
-        }
-
-        setColor(colorGenerated)
-    }
 
     const generateRgbColor = () => 
     {
@@ -31,7 +29,7 @@ function RandomColor()
 
     const generateRandomColor = () => 
     {
-        Math.random() > 0.5 ? generateHexColor() : generateRgbColor()
+        Math.random() > 0.5 ? generateHexColor(setColor) : generateRgbColor()
     }
 
   return (
@@ -46,7 +44,7 @@ function RandomColor()
         <div className='flex flex-row gap-1'>
             <button 
                 className='bg-gray-500 hover:bg-blue-500 outline-none  rounded-xl cursor-pointer p-2'
-                onClick={generateHexColor}
+                onClick={()=>{generateHexColor(setColor)}}
             >
                 HEX color
             </button>
