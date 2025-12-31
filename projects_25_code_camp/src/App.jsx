@@ -16,8 +16,10 @@ import GitHubLoad from './components/git-hub-profile-finder/git-hub-load.jsx'
 import SearchAutoComplete from './components/search-auto-complete/search-users.jsx'
 import TicTacToe from './components/tic-tac-toe/game.jsx'
 import UseFetchHook from './components/custom-hooks/testFetch.jsx'
-
 import ShowHideData from './components/custom-hooks/test-outside-click.jsx'
+
+import FeatureFlagGlobalState from "./components/feature-flags/context/create-context.jsx";
+import FeatureFlags from "./components/feature-flags/main.jsx";
 
 function App() 
 {
@@ -27,7 +29,7 @@ function App()
   return (
     <div className="flex flex-col gap-1 p-2">
       
-      {/* <Accordion />
+      <Accordion />
 
       <RandomColor />
 
@@ -57,9 +59,13 @@ function App()
 
       <TicTacToe />
 
-      <UseFetchHook /> */}
+      <UseFetchHook />
 
       <ShowHideData />
+
+      <FeatureFlagGlobalState>
+        <FeatureFlags />
+      </FeatureFlagGlobalState>
 
     </div>
   )
