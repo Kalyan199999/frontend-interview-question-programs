@@ -5,6 +5,10 @@ import Counter from './components/reference_hooks/counter'
 
 import MemoHook from './components/memo_hook/index1'
 
+import CallBacks from './components/callbacks/index'
+
+import Wrap from './components/context/wrap-context'
+
 const App = ()=>
 {
   return(
@@ -13,6 +17,10 @@ const App = ()=>
       <Counter />
 
       <MemoHook />
+
+      <CallBacks />
+
+      <Wrap />
     </>
   )
 }
