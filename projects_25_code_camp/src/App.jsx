@@ -17,9 +17,11 @@ import SearchAutoComplete from './components/search-auto-complete/search-users.j
 import TicTacToe from './components/tic-tac-toe/game.jsx'
 import UseFetchHook from './components/custom-hooks/testFetch.jsx'
 import ShowHideData from './components/custom-hooks/test-outside-click.jsx'
-
 import FeatureFlagGlobalState from "./components/feature-flags/context/create-context.jsx";
 import FeatureFlags from "./components/feature-flags/main.jsx";
+
+import Scroll from './components/scroll-top-to-bottom/scroll.jsx'
+import ScrollParticularSection from './components/scroll-top-to-bottom/scroll-particular-section.jsx'
 
 function App() 
 {
@@ -66,6 +68,9 @@ function App()
       <FeatureFlagGlobalState>
         <FeatureFlags />
       </FeatureFlagGlobalState>
+
+      <Scroll />
+      <ScrollParticularSection />
 
     </div>
   )
