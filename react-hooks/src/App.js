@@ -9,6 +9,8 @@ import CallBacks from './components/callbacks/index'
 
 import Wrap from './components/context/wrap-context'
 
+import Window1 from './components/window_functions/window1'
+
 const App = ()=>
 {
   return(
@@ -21,6 +23,8 @@ const App = ()=>
       <CallBacks />
 
       <Wrap />
+
+      <Window1 />
     </>
   )
 }

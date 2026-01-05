@@ -23,56 +23,66 @@ import FeatureFlags from "./components/feature-flags/main.jsx";
 import Scroll from './components/scroll-top-to-bottom/scroll.jsx'
 import ScrollParticularSection from './components/scroll-top-to-bottom/scroll-particular-section.jsx'
 
+import FoodReceipes from './components/food-receips/index.jsx'
+
 function App() 
 {
 
   console.log("jsonData");
   
   return (
-    <div className="flex flex-col gap-1 p-2">
+    <>
+      <div className="flex flex-col gap-1 p-2">
+
+        <Accordion />
+
+        <RandomColor />
+
+        <Rating  numStars='6' />
+
+        <Sliding num='5' />
+
+        <ImageSlider />
+
+        <LoadMoreProducts />
+        
+        <TreeView menu = {data} />
+
+        <QrCodeGeneration />
+
+        <LightDarkMode />
+
+        <Themes />
+
+        <ScrollIndicator />
+
+        <TestingTabs  />
+
+        <GitHubLoad />
+
+        <SearchAutoComplete />
+
+        <TicTacToe />
+
+        <UseFetchHook />
+
+        <ShowHideData />
+
+        <FeatureFlagGlobalState>
+          <FeatureFlags />
+        </FeatureFlagGlobalState>
+
+        <Scroll />
+        <ScrollParticularSection />
+
+      </div>
+
+      <div className="border border-green-500 m-2">
+        <h1>This is a food receipes component</h1>
+        <FoodReceipes />
+      </div>
       
-      <Accordion />
-
-      <RandomColor />
-
-      <Rating  numStars='6' />
-
-      <Sliding num='5' />
-
-      <ImageSlider />
-
-      <LoadMoreProducts />
-      
-      <TreeView menu = {data} />
-
-      <QrCodeGeneration />
-
-      <LightDarkMode />
-
-      <Themes />
-
-      <ScrollIndicator />
-
-      <TestingTabs  />
-
-      <GitHubLoad />
-
-      <SearchAutoComplete />
-
-      <TicTacToe />
-
-      <UseFetchHook />
-
-      <ShowHideData />
-
-      <FeatureFlagGlobalState>
-        <FeatureFlags />
-      </FeatureFlagGlobalState>
-
-      <Scroll />
-      <ScrollParticularSection />
-
-    </div>
+    </>
   )
 }
 
