@@ -33,7 +33,7 @@ function App()
   
   return (
     <>
-      {/* <div className="flex flex-col gap-1 p-2">
+      <div className="flex flex-col gap-1 p-2">
 
         <Accordion />
 
@@ -76,7 +76,7 @@ function App()
         <Scroll />
         <ScrollParticularSection />
 
-      </div> */}
+      </div>
 
       <div className="border border-green-500 m-2">
         <h1>This is a food receipes component</h1>
