@@ -24,6 +24,7 @@ import Scroll from './components/scroll-top-to-bottom/scroll.jsx'
 import ScrollParticularSection from './components/scroll-top-to-bottom/scroll-particular-section.jsx'
 
 import FoodReceipes from './components/food-receips/index.jsx'
+import Cart from './components/shopping-cart/cart.jsx'
 
 function App() 
 {
@@ -32,7 +33,7 @@ function App()
   
   return (
     <>
-      <div className="flex flex-col gap-1 p-2">
+      {/* <div className="flex flex-col gap-1 p-2">
 
         <Accordion />
 
@@ -75,11 +76,16 @@ function App()
         <Scroll />
         <ScrollParticularSection />
 
-      </div>
+      </div> */}
 
       <div className="border border-green-500 m-2">
         <h1>This is a food receipes component</h1>
         <FoodReceipes />
+      </div> 
+      
+
+      <div className="border border-red-500 p-2 m-2">
+        <Cart />
       </div>
       
     </>
