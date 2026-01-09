@@ -1,0 +1,24 @@
+.cart
+{
+    padding: 10px;
+    margin: 5px;
+    border:2px solid green
+}
+
+.cart-items
+{
+    display: flex;
+    flex-direction: column;
+    gap:5px
+
+}
+
+.item
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    border: 1px solid red;
+    padding: 2px;
+}

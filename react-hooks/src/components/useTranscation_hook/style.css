@@ -1,0 +1,13 @@
+.table
+{
+    border: 2px solid rgb(0, 255, 213);
+    margin: 5px;
+    padding: 5px;
+}
+
+.data-fetch
+{
+    border: 2px solid rgb(225, 0, 255);
+    margin: 5px;
+    padding: 5px;
+}

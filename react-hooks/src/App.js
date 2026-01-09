@@ -11,6 +11,17 @@ import Wrap from './components/context/wrap-context'
 
 import Window1 from './components/window_functions/window1'
 
+import Reducer from './components/reducer_hook/reducer'
+import CartReducer from './components/reducer_hook/cart'
+
+import ImperativeUsage from './components/imperativeHandle_hook/parent'
+
+import IdUsage from './components/idUsage/id-use'
+
+import MathematicalTable from './components/useTranscation_hook/table'
+
+import FetchData from './components/useTranscation_hook/fetching-data'
+
 const App = ()=>
 {
   return(
@@ -25,6 +36,16 @@ const App = ()=>
       <Wrap />
 
       <Window1 />
+
+      <Reducer />
+      <CartReducer />
+
+      <ImperativeUsage />
+
+      <IdUsage />
+
+      {/* <MathematicalTable /> */}
+      <FetchData />
     </>
   )
 }
