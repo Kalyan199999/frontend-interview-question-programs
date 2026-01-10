@@ -22,6 +22,8 @@ import MathematicalTable from './components/useTranscation_hook/table'
 
 import FetchData from './components/useTranscation_hook/fetching-data'
 
+import User from './components/actionstate/user-form'
+
 const App = ()=>
 {
   return(
@@ -44,8 +46,10 @@ const App = ()=>
 
       <IdUsage />
 
-      {/* <MathematicalTable /> */}
       <FetchData />
+      {/* <MathematicalTable /> */}
+
+      <User />
     </>
   )
 }

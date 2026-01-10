@@ -1,0 +1,32 @@
+.user-data
+{
+    margin: 5px;
+    padding: 5%;
+    border:2px solid green;
+
+}
+
+.user-form
+{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.error
+{
+    color:red
+}
+
+.user-details
+{
+    color:blue
+}
+
+.loading
+{
+    color: green;
+}
